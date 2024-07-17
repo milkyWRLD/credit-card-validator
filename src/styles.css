@@ -1,0 +1,122 @@
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	margin: 0;
+	font-family: Arial, sans-serif;
+}
+
+.card-images {
+	display: flex;
+	gap: 10px;
+}
+
+.card-images img {
+	opacity: 0.3; /* Все карты приглушены по умолчанию */
+	transition: opacity 0.3s ease-in-out;
+}
+
+.card-images img.active {
+	opacity: 1; /* Активная карта ярче */
+}
+
+.input-container {
+	margin-top: 20px;
+}
+
+#validationResult {
+	margin-top: 10px;
+	font-weight: bold;
+	color: green;
+}
+
+input {
+	padding: 10px;
+	margin-bottom: 10px;
+	width: 300px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.input-container {
+	margin-top: 20px;
+}
+
+button {
+	padding: 10px 20px;
+	background-color: #4caf50;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #45a049;
+}
+
+#validationResult {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	font-weight: bold;
+	color: green;
+}
+
+#cardExamples {
+	margin-top: 80px;
+	width: 1000px;
+	border-collapse: separate;
+	border-spacing: 0;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	margin: 0 auto;
+}
+
+#cardExamples caption {
+	font-size: 1.2em;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+#cardExamples td,
+#cardExamples th {
+	padding: 10px;
+	text-align: left;
+	border-bottom: 1px solid #ccc;
+}
+
+#cardExamples th {
+	background-color: #f2f2f2;
+	font-weight: bold;
+	border-bottom: none;
+}
+
+.card-type {
+	font-weight: bold;
+	background-color: #f9f9f9;
+	border-right: 1px solid #ccc;
+	padding: 10px;
+}
+
+.card-numbers {
+	padding: 10px;
+}
+
+.card-type:first-child {
+	border-radius: 10px 0 0 0;
+}
+
+.card-type:last-child {
+	border-radius: 0 10px 0 0;
+}
+
+.card-numbers:first-child {
+	border-radius: 0 0 0 10px;
+}
+
+.card-numbers:last-child {
+	border-radius: 0 0 10px 0;
+}
