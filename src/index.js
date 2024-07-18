@@ -1,14 +1,5 @@
 import './styles.css'
 
-// Импорт изображений
-import americanImage from './images/american.png'
-import dinersImage from './images/diners.png'
-import discoverImage from './images/discover.png'
-import maestroImage from './images/maestro.png'
-import mirImage from './images/mir.png'
-import visaImage from './images/visa.png'
-import webmoneyImage from './images/webmoney.png'
-
 const cardNumberInput = document.getElementById('cardNumberInput')
 const validateButton = document.getElementById('validateButton')
 const cardImages = document.querySelector('.card-images')
