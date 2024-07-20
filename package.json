@@ -1,5 +1,5 @@
 {
-	"name": "credit card validator",
+	"name": "credit-card-validator",
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
@@ -19,6 +19,7 @@
 	},
 	"author": "",
 	"license": "ISC",
+	"homepage": "https://milkywrld.github.io/credit-card-validator",
 	"devDependencies": {
 		"@babel/core": "^7.24.7",
 		"@babel/preset-env": "^7.24.7",
