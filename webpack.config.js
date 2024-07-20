@@ -7,7 +7,6 @@ module.exports = {
 	output: {
 		filename: 'bundle.js',
 		path: path.resolve(__dirname, 'dist'),
-		assetModuleFilename: 'images/[name][ext][query]',
 	},
 	module: {
 		rules: [
@@ -18,9 +17,6 @@ module.exports = {
 			{
 				test: /\.(png|svg|jpg|jpeg|gif)$/i,
 				type: 'asset/resource',
-				generator: {
-					filename: 'images/[name][ext][query]',
-				},
 			},
 		],
 	},
@@ -30,11 +26,8 @@ module.exports = {
 		}),
 	],
 	devServer: {
-		static: {
-			directory: path.join(__dirname, 'dist'),
-		},
+		contentBase: path.join(__dirname, 'dist'),
 		compress: true,
 		port: 8080,
-		hot: true,
 	},
 }
