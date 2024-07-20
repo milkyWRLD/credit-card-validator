@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Credit Card Validator</title>
+		<link rel="stylesheet" href="src/styles.css" />
+	</head>
+	<body>
+		<div class="card-images"></div>
+		<div class="input-container">
+			<input
+				type="text"
+				id="cardNumberInput"
+				placeholder="Введите номер карты"
+			/>
+			<button id="validateButton">Проверить</button>
+		</div>
+		<div id="validationResult"></div>
+		<table id="cardExamples">
+			<caption>
+				Примеры номеров карт
+			</caption>
+			<tbody>
+				<tr>
+					<td class="card-type">Visa</td>
+					<td class="card-numbers">
+						4111 1111 1111 1111<br />4012 8888 8888 1881
+					</td>
+				</tr>
+				<tr>
+					<td class="card-type">Mastercard</td>
+					<td class="card-numbers">
+						5500 0000 0000 0004<br />5105 1051 0510 5100
+					</td>
+				</tr>
+				<tr>
+					<td class="card-type">American Express</td>
+					<td class="card-numbers">3782 822463 10005<br />3714 496353 98431</td>
+				</tr>
+				<tr>
+					<td class="card-type">Discover</td>
+					<td class="card-numbers">
+						6011 0000 0000 0004<br />6011 1111 1111 1117
+					</td>
+				</tr>
+				<tr>
+					<td class="card-type">Diners Club</td>
+					<td class="card-numbers">3056 9309 0259 04<br />3852 0000 0232 37</td>
+				</tr>
+				<tr>
+					<td class="card-type">Maestro</td>
+					<td class="card-numbers">
+						6759 6498 2643 8453<br />6759 6498 2643 8453
+					</td>
+				</tr>
+				<tr>
+					<td class="card-type">MIR</td>
+					<td class="card-numbers">
+						2204 0412 3456 7890<br />2204 0412 3456 7890
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<script src="bundle.js"></script>
+	</body>
+</html>
